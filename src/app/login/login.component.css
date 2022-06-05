@@ -1,0 +1,33 @@
+.outerInputBox{
+    /* border:1px solid rgb(0, 64, 85); */
+    box-shadow: 65px 0px 50px 0px #6c757d4d;
+    /* width:500px; */
+    height: 500px;
+    padding:10px;
+    margin:10px;
+    /* display: flex;
+    align-items: center; */
+}
+.tab-content{
+    margin-top:50px;
+}
+.outerSignupBox{
+    box-shadow: -65px 0px 50px 0px #6c757d4d;
+    height: 500px;
+    padding:10px;
+    margin:10px;
+}
+.sign-in-content{
+    height: 500px;
+    align-items:center;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttondiv{
+    margin-top:50px;
+}
+.outer-container{
+    height:calc(100vh - 56px);
+}

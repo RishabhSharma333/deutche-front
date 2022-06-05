@@ -1,0 +1,49 @@
+<div *ngIf="comparing">
+    <div class="title" style="text-align:center;margin-top:10px">
+        <h2>{{currentArticle.title}}</h2>
+    </div>
+    <div class="row" style="margin-top:10px;">
+        <div class="col-6" style="border-right:2px solid rgb(0, 64, 85);">
+            {{currentArticle.olderContent}}
+            <div *ngIf="!currentArticle.olderContent"> There is no older version for this article</div>
+        </div>
+        <div class="col-6">
+            {{currentArticle.latestContent}}
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+            <button class="btn circular-buttons " (click)="approveArticle()">Approve</button>
+            <button class="btn circular-buttons" (click)="setComparing(false)"
+                style="background-color:white;border-color:#afbece">Return to list</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="content" *ngIf="!comparing" style="position:sticky;top:56px;">
+    <div class="row" style="width: 100%">
+        <div class="col-3">
+            <app-list style="position:sticky;top:56px;" [role]="role"></app-list>
+        </div>
+        <div class="col-9">
+            <app-content></app-content>
+            <br>
+            <hr>
+            <div *ngIf="currentArticle">
+                <button class="btn circular-buttons" *ngIf="currentArticle.status=='draft'" (click)="approveArticle()">Approve</button>
+                <button class="btn circular-buttons" (click)="setComparing(true)"
+                    style="background-color:white;border-color:#afbece">Compare against previous version</button>
+
+                <button class="btn circular-buttons" (click)="deleteArticle()" style="border-color:red">Delete</button>
+            </div>
+
+            <!-- <app-add-new></app-add-new> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<!-- <div class="start-admin row">
+    <div class="col-3"></div>
+    <div class="col-9" style="z-index:2">
+        <div class="row" style="height:50px">
+            <div class="col-9 addNewArticle" style="display:flex;align-items:center">
+                <div class="buttons">
+                    <button type="button" class="btn circular-buttons">Add new Article</button>
+                    <button type="button" class="btn circular-buttons active">My articles</button>
+                </div>
+            </div>
+            <div class="col-3 name">
+                <p class="circular-buttons">
+                    logged in as admin name
+                </p>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="content" style="position:sticky;top:56px;">
+    <div class="row" style="width: 100%">
+        <div class="col-3">
+            <app-list style="position:sticky;top:56px;" [role]="role"></app-list>
+        </div>
+        <div class="col-9" >
+            <app-add-new></app-add-new>
+            <!-- <div *ngIf="somecondition">
+
+                <app-content></app-content>
+                update this article
+            </div> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.content{
+    background-color: aliceblue;
+ 
+ }
+ .navbar{
+     position:sticky;
+     top:0;
+     background-color:rgb(0, 64, 85);
+ }
+ .messagesDiv{
+     position: fixed;
+     z-index:2;
+     width: 100%;
+     display: flex;
+     flex-direction: row-reverse;
+     padding-right:50px;
+     margin-top:10px;
+     
+     
+ }
+ .insidemessage{
+     width: fit-content;
+     border:2px solid rgb(0, 64, 85);
+     font-size: 20px;
+     height: 40px;
+     text-align: center;
+ }

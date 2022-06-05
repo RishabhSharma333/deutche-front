@@ -1,0 +1,35 @@
+<div class="list-container">
+    <div class="searchInput">
+        <div class="buttons">
+            <button type="button" class="btn circular-buttons" (click)="sortByAuthor()">Sort by Author</button>
+            <button type="button" class="btn circular-buttons" >Sort by Date</button>
+            <button type="button" class="btn circular-buttons" (click)="getAllArticle()">Clear filters</button>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm" *ngIf="!loading">Search article</span>
+                <button *ngIf="loading" class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Searching...
+                  </button>
+            </div>
+            <input type="text" class="form-control" aria-label="Small" [(ngModel)]="searchFilter" (ngModelChange)="filterArticles()" aria-describedby="inputGroup-sizing-sm">
+        </div>
+    </div>
+    <div class="list-items-container" *ngIf="allArticles">
+        <ol class="list-group list-group-numbered">
+            <li *ngFor="let article of allArticles ; let i=index;" (click)="selectArticle(i)" [ngClass]="{'active':i == activeIndex}" class="list-group-item d-flex justify-content-between align-items-start ">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{article.title}}</div>
+                   by {{article.author}}
+                </div>
+                <span *ngIf="role=='superadmin' || role=='admin'" class="badge  rounded-pill">{{article.status}}</span>
+            </li>
+            
+        </ol>
+    </div>
+    <div *ngIf="allArticles.length==0">
+        <p style="font-size:18px;text-align: center;">No articles found</p>
+    </div>
+
+</div>

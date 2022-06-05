@@ -1,0 +1,44 @@
+.list-container {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    padding-top: 30px;
+
+}
+
+.list-group-item:hover {
+    border-color: #4d5b6ee0;
+    cursor: pointer;
+}
+
+.list-group-item.active {
+    color:black;
+    border: 1px solid #ced4da;
+    background-color: #afbece;
+
+}
+
+.list-items-container {
+    width: 90%;
+    margin: auto;
+}
+.buttons{
+    
+    /* margin-right:10px; */
+}
+.circular-buttons{
+    background-color: #e9ecef;
+    border-radius: 20px;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.circular-buttons.active{
+    background-color: #afbece;
+}
+.searchInput {
+    width: 90%;
+    margin: auto;
+}
+
+.badge {
+    color: black;
+}

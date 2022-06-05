@@ -1,0 +1,74 @@
+<div class="outer-container">
+
+
+<h3 style="text-align:center;padding:30px 0;">
+    Sign in / Sign up for the best articles
+</h3>
+<div class="loginBox">
+    <ul class="nav nav-tabs" id="myTab" role="tablist" style="display:flex;justify-content:center">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">Sign in</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Sign up</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent" style="display:flex;justify-content:center">
+        <div class="tab-pane fade show active outerInputBox" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="sign-in-content" >
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Username: </span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Password: </span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="buttondiv" style="text-align:center">
+                    <button class="btn btn-outline-info btn-lg" type="submit">Sign in</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="tab-pane fade outerSignupBox" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="sign-in-content" >
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Username: </span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Password: </span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+                <div class="security-question" style="width:100%;">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select your security question</option>
+                        <option value="1">Name of your first pet</option>
+                        <option value="2">Name of your first school</option>
+                    </select>
+                    
+                </div>
+                <div class="security-answer" style="padding-top:16px;width: 100%;">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="buttondiv" style="text-align:center">
+                    <button class="btn btn-outline-info btn-lg" type="submit">Sign up</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>

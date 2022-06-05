@@ -1,0 +1,10 @@
+
+<div class="article-show" style="width:90%; margin:auto;" *ngIf="currentArticle">
+    <h4 style="text-align:center;margin-top:10px">{{currentArticle.title}}</h4>
+    <p style="text-align:end;">by {{currentArticle.author}}</p>
+    <hr>
+    <p style="font-size:20px;" >{{currentArticle.latestContent}}</p>
+</div>
+<div *ngIf="!currentArticle">
+  <h4 style="text-align:center"> Nothing to show</h4>
+</div>

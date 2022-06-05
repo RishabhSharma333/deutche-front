@@ -1,0 +1,19 @@
+<h2 style="margin-top:10px; text-align: center;">Add a new article to publish</h2>
+<hr>
+<div class="article-show" style="width:90%; margin:auto;">
+    <h4>Title of article:</h4>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" style="font-size:20px;" id="inputGroup-sizing-sm">Title</span>
+        </div>
+        <input type="text" style="font-size: 20px" [(ngModel)]="heading" class="form-control" aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <h4>Content of article:</h4>
+    <div class="input-group article-adder">
+        <textarea [(ngModel)]="paragraph" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div class="buttons" style="padding:10px;">
+        <button type="button" class="btn circular-buttons" (click)="addNewArticle()">Add new Article</button>
+    </div>
+</div>

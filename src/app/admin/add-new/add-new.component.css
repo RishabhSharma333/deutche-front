@@ -1,0 +1,17 @@
+textarea{
+    height: 200px;
+    min-height: 52px;
+    max-height: 300px;
+}
+.article-adder{
+    display: flex;
+}
+.circular-buttons{
+    background-color: #afbece;
+    border-radius: 20px;
+    margin-right:20px;
+    /* margin-bottom:20px; */
+}
+input{
+    font-size:25px;
+}
